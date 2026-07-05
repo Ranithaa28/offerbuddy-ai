@@ -20,7 +20,8 @@ RUN chown -R 1000:1000 /app
 # Switch to the huggingface user
 USER 1000
 
-# Hugging Face Spaces expose port 7860
+# Set production environment and port
+ENV NODE_ENV=production
 ENV PORT=7860
 EXPOSE 7860
 
