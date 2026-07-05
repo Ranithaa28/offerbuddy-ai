@@ -1,0 +1,8 @@
+{
+  "name": "Remix: OfferBuddy AI",
+  "description": "An AI-powered placement preparation platform featuring specialized workflows for resume review, skill gap analysis, mock interviews, and coding evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

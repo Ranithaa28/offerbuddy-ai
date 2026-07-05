@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  /* Dynamically bind slate classes to our theme-controlled CSS variables */
+  --color-slate-950: var(--slate-950);
+  --color-slate-900: var(--slate-900);
+  --color-slate-800: var(--slate-800);
+  --color-slate-700: var(--slate-700);
+  --color-slate-600: var(--slate-600);
+  --color-slate-50: var(--slate-50);
+  --color-slate-500: var(--slate-500);
+  --color-slate-400: var(--slate-400);
+  --color-slate-300: var(--slate-300);
+  --color-slate-200: var(--slate-200);
+  --color-slate-100: var(--slate-100);
+}
+
+:root {
+  /* Default: Sleek Light Theme (Restoring natural high-contrast readabilities) */
+  --slate-950: #f8fafc; /* Dynamic light canvas bg */
+  --slate-900: #ffffff; /* Dynamic light card bg */
+  --slate-800: #0f172a; /* Dynamic headings / dark text */
+  --slate-700: #334155; /* Readable secondary text */
+  --slate-600: #475569; /* Regular text */
+  --slate-50: #f8fafc;  /* Soft light background */
+  --slate-500: #64748b; /* Medium gray labels */
+  --slate-400: #475569; /* Readable descriptions */
+  --slate-300: #cbd5e1; /* Accent divider/line */
+  --slate-200: #e2e8f0; /* Soft borders */
+  --slate-100: #f1f5f9; /* Subtle gray backgrounds/soft borders */
+}
+
+.theme-dark {
+  /* Cosmic Dark Theme (Deep interstellar slate and glowing borders) */
+  --slate-950: #070b13; /* Deep dark space canvas bg */
+  --slate-900: #101622; /* Dark panel/card bg */
+  --slate-800: #f1f5f9; /* Near-white headings */
+  --slate-700: #cbd5e1; /* High-readability secondary text */
+  --slate-600: #94a3b8; /* Muted tech description text */
+  --slate-50: #0a0e1a;  /* Dark input/softer card background */
+  --slate-500: #cbd5e1; /* High-contrast tags */
+  --slate-400: #94a3b8; /* Balanced description labels */
+  --slate-300: #334155; /* Medium dark border dividers */
+  --slate-200: #1e293b; /* Cyber borders */
+  --slate-100: #111827; /* Dark backgrounds/inner containers */
+}
+
+.theme-emerald {
+  /* Emerald Forest Theme (Organic warm light theme with deep green forest accents) */
+  --slate-950: #f2faf4; /* Calm light mint canvas bg */
+  --slate-900: #ffffff; /* Fresh white panel bg */
+  --slate-800: #042f1a; /* Rich forest green headings */
+  --slate-700: #064e3b; /* Emerald body titles */
+  --slate-600: #059669; /* Emerald highlights */
+  --slate-50: #f4fbf6;  /* Calm light mint input/softer card bg */
+  --slate-500: #047857; /* Deep emerald labels */
+  --slate-400: #065f46; /* Readable organic descriptions */
+  --slate-300: #a7f3d0; /* Soft mint divider lines */
+  --slate-200: #d1fae5; /* Soft minty borders */
+  --slate-100: #ecfdf5; /* Cozy emerald background panels */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--slate-950);
+  color: var(--slate-700);
+}
+
+/* Custom class overrides to support dynamic themes cleanly */
+.bg-white {
+  background-color: var(--slate-900) !important;
+}
+
+/* Custom scrollbars - Sleek Mode Adapts */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--slate-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slate-300);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--slate-500);
+}
+
