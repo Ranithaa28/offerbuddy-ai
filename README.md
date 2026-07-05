@@ -1,3 +1,12 @@
+---
+title: Offerbudddy
+emoji: 🐠
+colorFrom: green
+colorTo: red
+sdk: docker
+pinned: false
+hf_oauth: true
+---
 # OfferBuddy AI
 > **One Platform. Four AI Experts. One Dream Job.**
 > *Final Year Academic Capstone Project — Department of Computer Science & Engineering*
@@ -157,3 +166,4 @@ npm run start
 
 ---
 *OfferBuddy AI — Built to empower the next generation of engineers to unlock elite career opportunities.*
+
