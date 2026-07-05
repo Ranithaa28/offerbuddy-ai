@@ -1,5 +1,29 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "user_kn6mdc631",
+      "email": "ranithaaravichandran@gmail.com",
+      "password": "rani@123",
+      "name": "rani",
+      "targetRole": "Software Engineer",
+      "domain": "Tech & IT",
+      "createdAt": "2026-07-05T09:26:42.047Z",
+      "lastAccessedAt": "2026-07-05T09:28:08.268Z",
+      "dailyPulse": {
+        "task": {
+          "title": "Optimize a Nested Loop",
+          "description": "Nested loops can cause O(N^2) time complexity, which slows down high-performance applications.",
+          "actionableStep": "Convert a nested loop iterating over an array of 100 items into a single loop using a Map / Hash Dictionary to lookup items in O(1) time.",
+          "duration": "10 mins",
+          "category": "Coding",
+          "difficulty": "Easy",
+          "id": "task_leaqmnpkt",
+          "completed": false
+        },
+        "lastGeneratedAt": "2026-07-05T09:27:02.311Z"
+      }
+    }
+  ],
   "resumes": [],
   "skillAnalyses": [],
   "interviewSessions": [],
